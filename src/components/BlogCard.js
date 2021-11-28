@@ -72,7 +72,7 @@ const BlogCard = (props) => {
               </Button>
 
         }
-        <Link to={`/api/blogs/${_id}`} target="_blank">
+        <Link to={`/api/blogs/${_id}`}>
           <Button size="small" color="primary">
             Go to Website
           </Button>
