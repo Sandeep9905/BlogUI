@@ -18,7 +18,7 @@ export const singleBlog = blog =>(
 )
 
 export const fetchSingleBlog = ( blogid)=>(dispatch , getState)=>{
-  return apiCall("get", `/api/blogs/${blogid}`)
+  return apiCall("get", `/api/${blogid}`)
     .then(res => {
       dispatch(singleBlog(res))
     })

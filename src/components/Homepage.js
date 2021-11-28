@@ -11,7 +11,6 @@ import Snackbar from '@material-ui/core/Snackbar';
 
 const Homepage = (props) => {
     const { authUser, currentUser, errors ,removeError } = props;
-    debugger;
     const [data, setData] = useState({
         email: '',
         password: ""

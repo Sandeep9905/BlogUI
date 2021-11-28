@@ -8,7 +8,6 @@ import withAuth from '../hocs/withAuth';
 
 const AllContentWriter = (props) => {
     const {currentUser ,fetchAllContentWriter , writers} = props;
-    debugger;
     useEffect(()=>{
         fetchAllContentWriter();
     },[]);

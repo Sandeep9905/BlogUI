@@ -10,7 +10,6 @@ import { useParams } from 'react-router-dom';
 const Blog = (props) => {
     const {blog_id} = useParams();
     const {fetchSingleBlog , blog} = props;
-    console.log('ppp',blog);
     useEffect(()=>{
         props.fetchSingleBlog(blog_id);
     },[]);
